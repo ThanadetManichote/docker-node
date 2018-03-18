@@ -1,0 +1,16 @@
+{
+  "name": "docker-node-helloworldd",
+  "version": "1.0.0",
+  "description": "Docker with nodejs run hello world by nodemon.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "1.12.1",
+  },
+  "scripts": {
+    "develop": "NODE_PORT=8123 NODE_ENV=develop nodemon index.js",
+    "production": "NODE_PORT=8123 NODE_ENV=production forever start index.js"
+  },
+  "author": "Thanadet Manichote",
+  "license": "ISC",
+}

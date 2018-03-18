@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+ dockernode:
+    build: ./
+    volumes:
+      - ../:/app
+      - ../node_modules/:/node_modules/
+    ports:
+      - "8123:8123" 
+    tty : true
+    container_name:
+      docker-node-helloworld
